@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azureassessment09.database.windows.net:1433;database=assignment_management_system;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: admin09@azureassessment09
+    password: password@09
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  logging:
+    level:
+    org.springframework.boot.autoconfigure.condition: DEBUG
